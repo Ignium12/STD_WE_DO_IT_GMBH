@@ -50,8 +50,12 @@ public class Main {
                 break;
                 
             case "T": 
-            case "t": 
-            //Teilzeitberufsschule           	
+            case "t":
+
+			case "B":
+			case "b":
+				//Berufsfachschule
+				//Teilzeitberufsschule
             	for(int i=0;i<gradeAmount;i++)
             	{
             		System.out.println("Geben Sie Zahl " + i+1 + " ein: ");
@@ -61,21 +65,8 @@ public class Main {
             	}            	
 				
                 break;
-                
-            case "B": 
-            case "b": 
-            //Berufsfachschule           	
-            	for(int i=0;i<gradeAmount;i++)
-            	{
-            		System.out.println("Geben Sie Zahl " + i+1 + " ein: ");
-            		grade = scanner.nextInt();
-            		inputCheck(""+grade, 0, 6);
-            		gradeArray[i] = grade;
-            	}
-            	
-                break;
-                
-            default: //error handling
+
+			default: //error handling
                 System.out.println(form + " Schulform falsch eingegeben!");
 				System.exit(1);
         }
